@@ -55,6 +55,3 @@ Welcome to **Currency Converter**, a beginner-friendly Java console-based applic
 ## 👨‍💻 Author
 
 -[Lakshit Vashishtha](https://github.com/spy-lakshit/)
-
-
-
