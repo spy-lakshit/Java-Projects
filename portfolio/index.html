@@ -5,78 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lakshit Vashishtha | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <div class="container">
+    <div class="container header-content">
       <h1>👋 Lakshit Vashishtha</h1>
       <p>Java Developer | Beginner Projects | Core Java Enthusiast</p>
+      <a href="#projects" class="btn">View My Projects</a>
     </div>
   </header>
 
-  <nav>
-    <ul class="nav-links">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#about">About Me</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- Projects Section -->
   <section id="projects" class="container">
     <h2>🚀 Projects</h2>
-    
-    <div class="project">
-      <h3>💰 Banking System</h3>
-      <p>Console-based banking system to manage accounts, deposits, withdrawals, and balance checking.</p>
-      <a href="https://github.com/spy-lakshit/Java-Projects/tree/main/BankingSystem" target="_blank">View on GitHub</a>
-    </div>
+    <div class="projects-grid">
+      <!-- Banking System -->
+      <div class="project-card">
+        <h3>💰 Banking System</h3>
+        <p>Console-based banking system to manage accounts, deposits, withdrawals, and balance checking.</p>
+        <a href="https://github.com/spy-lakshit/BankingSystem" target="_blank">View on GitHub</a>
+      </div>
 
-    <div class="project">
-      <h3>🏥 Hospital Management System</h3>
-      <p>Manage patient records and hospital data using a console application.</p>
-      <a href="https://github.com/spy-lakshit/Java-Projects/tree/main/HospitalManagementSystem" target="_blank">View on GitHub</a>
-    </div>
+      <!-- Hospital Management -->
+      <div class="project-card">
+        <h3>🏥 Hospital Management System</h3>
+        <p>Manage patient records and hospital data using a console application.</p>
+        <a href="https://github.com/spy-lakshit/HospitalManagementSystem" target="_blank">View on GitHub</a>
+      </div>
 
-    <div class="project">
-      <h3>📚 Library Management System</h3>
-      <p>Manage books, borrowing records, and availability in a console-based interface.</p>
-      <a href="https://github.com/spy-lakshit/Java-Projects/tree/main/LibraryManagementSystem" target="_blank">View on GitHub</a>
-    </div>
+      <!-- Library Management -->
+      <div class="project-card">
+        <h3>📚 Library Management System</h3>
+        <p>Manage books, borrowing records, and availability in a console-based interface.</p>
+        <a href="https://github.com/spy-lakshit/LibraryManagementSystem" target="_blank">View on GitHub</a>
+      </div>
 
-    <div class="project">
-      <h3>🖼 QR Code Generator</h3>
-      <p>Generate QR codes for URLs or text and save as PNG files using Java and ZXing library.</p>
-      <a href="https://github.com/spy-lakshit/Java-Projects/tree/main/QrCodeGenerator" target="_blank">View on GitHub</a>
-    </div>
+      <!-- QR Code Generator -->
+      <div class="project-card">
+        <h3>🖼 QR Code Generator</h3>
+        <p>Generate QR codes for URLs or text and save as PNG files using Java and ZXing library.</p>
+        <a href="https://github.com/spy-lakshit/QRCodeGenerator" target="_blank">View on GitHub</a>
+      </div>
 
-    <div class="project">
-      <h3>🧮 Scientific Calculator</h3>
-      <p>Console-based calculator for arithmetic and scientific operations.</p>
-      <a href="https://github.com/spy-lakshit/Java-Projects/tree/main/Calculator" target="_blank">View on GitHub</a>
-    </div>
+      <!-- Scientific Calculator -->
+      <div class="project-card">
+        <h3>🧮 Scientific Calculator</h3>
+        <p>Console-based calculator for arithmetic and scientific operations.</p>
+        <a href="https://github.com/spy-lakshit/ScientificCalculator" target="_blank">View on GitHub</a>
+      </div>
 
-    <div class="project">
-      <h3>💱 Currency Converter</h3>
-      <p>Convert between INR, USD, EUR, and YEN using a console application.</p>
-      <a href="https://github.com/spy-lakshit/Java-Projects/tree/main/CurrencyConvertor" target="_blank">View on GitHub</a>
+      <!-- Currency Converter -->
+      <div class="project-card">
+        <h3>💱 Currency Converter</h3>
+        <p>Convert between INR, USD, EUR, and YEN using a console application.</p>
+        <a href="https://github.com/spy-lakshit/CurrencyConverter" target="_blank">View on GitHub</a>
+      </div>
     </div>
   </section>
 
-  <section id="about" class="container">
+  <!-- About Section -->
+  <section id="about" class="container about-section">
     <h2>📖 About Me</h2>
-    <p>I'm a beginner Java developer passionate about building practical applications and learning OOP, file handling, database integration, and GUI development.</p>
+    <p>I'm a beginner Java developer passionate about building practical applications and learning OOP, file handling, database integration, and GUI development. I enjoy making projects that solve real-world problems while improving my coding skills.</p>
   </section>
 
-  <section id="contact" class="container">
-    <h2>📬 Contact</h2>
-    <p>Connect with me:</p>
-    <ul>
-      <li>GitHub: <a href="https://github.com/spy-lakshit" target="_blank">spy-lakshit</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/lakshit-vashishtha-3291a1295" target="_blank">Lakshit Vashishtha</a></li>
-      <li>Email: <a href="mailto:lakshitvashishtha2@gmail.com">lakshitvashishtha2@gmail.com</a></li>
-    </ul>
+  <!-- Contact Section -->
+  <section id="contact" class="container contact-section">
+    <h2>📬 Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="successMessage"></p>
+    </form>
+    <div class="social-links">
+      <a href="https://github.com/spy-lakshit" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/lakshit-vashishtha-3291a1295" target="_blank">LinkedIn</a>
+      <a href="mailto:lakshitvashishtha2@gmail.com">Email</a>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Lakshit Vashishtha | Made with ❤️</p>
   </footer>
